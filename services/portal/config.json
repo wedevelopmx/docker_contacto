@@ -1,0 +1,14 @@
+{
+  "production": {
+    "username": "contacto",
+    "password": "contacto",
+    "database": "contacto_db",
+    "host": "mysql",
+    "dialect": "mysql",
+    "port": 3306,
+    "define": {
+        "paranoid": true
+    },
+    "logging": false
+  }
+}
