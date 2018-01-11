@@ -9,6 +9,11 @@
     "define": {
         "paranoid": true
     },
-    "logging": false
+    "logging": false,
+    "redis" : {
+      "host": "redis", 
+      "port": 6379, 
+      "ttl" :  260
+    }
   }
 }

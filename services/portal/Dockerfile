@@ -8,8 +8,8 @@ WORKDIR /portal
 RUN git clone https://github.com/wedevelopmx/contactolegislativo.git \ 
   && npm install pm2 bower -g \
   && cd contactolegislativo \ 
-  && npm install \
-  && bower update -a
+  && npm install 
+  # && bower update -a
 
 COPY ./config.json /portal/config
 COPY ./process.json /portal
@@ -18,4 +18,4 @@ RUN cp config/config.json contactolegislativo/app/config
 
 EXPOSE 80
 
-CMD ["pm2-docker", "process.json"]
+#CMD ["pm2-docker", "process.json"]
